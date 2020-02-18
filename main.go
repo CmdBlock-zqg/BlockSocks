@@ -105,7 +105,7 @@ func main() {
 	}
 
 	// 开始监听
-	server, err := net.Listen("tcp", ":1080")
+	server, err := net.Listen("tcp", config.Listen)
 
 	if err == nil {
 		fmt.Printf("Server running at %s\n", config.Listen)
